@@ -16,6 +16,7 @@ namespace MeetFriends.App
         static void Main(string[] args)
         {
             var continued = true;
+            bool value;
 
             #region Insert Friends
 
@@ -28,11 +29,35 @@ namespace MeetFriends.App
                 Console.Write("Amigo: ");
                 friend.Name = Console.ReadLine();
 
-                Console.Write("Latitude: ");
-                friend.FriendAddress.NumberLatitude = double.Parse(Console.ReadLine());
+                value = false;
+                while (!value)
+                {
+                    Console.Write("Latitude: ");
+                    var latitude = Console.ReadLine();
 
-                Console.Write("Longitude: ");
-                friend.FriendAddress.NumberLongitude = double.Parse(Console.ReadLine());
+                    if (ValidateDouble(latitude))
+                    {
+                        value = true;
+                        friend.FriendAddress.NumberLatitude = double.Parse(latitude);
+                    }
+                    else
+                        Console.WriteLine("Número inválido. Digite a latitude novamente.");
+                }
+
+                value = false;
+                while (!value)
+                {
+                    Console.Write("Longitude: ");
+                    var longitude = Console.ReadLine();
+
+                    if (ValidateDouble(longitude))
+                    {
+                        value = true;
+                        friend.FriendAddress.NumberLongitude = double.Parse(longitude);
+                    }
+                    else
+                        Console.WriteLine("Número inválido. Digite a longitude novamente.");
+                }
 
                 friends.Add(friend);
 
@@ -108,6 +133,15 @@ namespace MeetFriends.App
             }
         }
              
+        private static bool ValidateDouble(string latitude)
+        {
+            double resultadoNumero = 0;
+            if (double.TryParse(latitude, out resultadoNumero))
+                return true;
+            else
+                return false;
+        }
+
         #endregion
     }
 }
