@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{0521DA7A-F13F-433E-85D9-A45EE344FC61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Domain", "0 - Domain", "{1945A50F-1667-47EE-9DC0-7552C67780C1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetFriends.Domain", "MeetFriends.Domain\MeetFriends.Domain.csproj", "{B0627D95-2EB8-4AE0-8049-08156788B35E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Test", "2 - Test", "{81DDA13B-4041-4EF9-9054-83AF160F3225}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetFriends.App", "MeetFriends.App\MeetFriends.App.csproj", "{74C82F96-09E9-468E-A94E-0D4F81BABBC4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeetFriends.Test", "MeetFriends.Test\MeetFriends.Test.csproj", "{1C661858-6E58-41BC-873F-38AE8983E0F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B0627D95-2EB8-4AE0-8049-08156788B35E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0627D95-2EB8-4AE0-8049-08156788B35E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0627D95-2EB8-4AE0-8049-08156788B35E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0627D95-2EB8-4AE0-8049-08156788B35E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74C82F96-09E9-468E-A94E-0D4F81BABBC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74C82F96-09E9-468E-A94E-0D4F81BABBC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74C82F96-09E9-468E-A94E-0D4F81BABBC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74C82F96-09E9-468E-A94E-0D4F81BABBC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C661858-6E58-41BC-873F-38AE8983E0F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C661858-6E58-41BC-873F-38AE8983E0F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C661858-6E58-41BC-873F-38AE8983E0F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C661858-6E58-41BC-873F-38AE8983E0F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B0627D95-2EB8-4AE0-8049-08156788B35E} = {1945A50F-1667-47EE-9DC0-7552C67780C1}
+		{74C82F96-09E9-468E-A94E-0D4F81BABBC4} = {0521DA7A-F13F-433E-85D9-A45EE344FC61}
+		{1C661858-6E58-41BC-873F-38AE8983E0F8} = {81DDA13B-4041-4EF9-9054-83AF160F3225}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C22E2024-5B38-459C-92D1-112D94AA23A6}
+	EndGlobalSection
+EndGlobal
