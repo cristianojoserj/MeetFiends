@@ -42,7 +42,7 @@ namespace MeetFriends.Domain.Entities
             }
 
             return friendsDistance
-                .OrderBy(p => p.Id)
+                .OrderBy(p => p.Distance)
                 .Take(3)
                 .ToList();
         }
